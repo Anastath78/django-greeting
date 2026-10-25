@@ -1,0 +1,13 @@
+{% extends "greetings/base.html" %}
+
+{% block title %}Запрос отклонён{% endblock %}
+
+{% block content %}
+    <h1 class="greeting">Запрос отклонён</h1>
+    <p class="subtitle">
+        Форма отправлена без действительного CSRF-токена. Обновите страницу
+        и попробуйте ещё раз. Если ошибка повторяется, проверьте, что в браузере
+        разрешены cookie.
+    </p>
+    <a class="form__button form__button--link" href="/">Вернуться на главную</a>
+{% endblock %}
